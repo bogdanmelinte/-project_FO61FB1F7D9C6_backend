@@ -66,7 +66,7 @@ class Apiservice():
     @cross_origin('*')
     def getEntity():
         fn_dmn_id = request.args.get('fn_dmn_id')
-        sql_query = """SELECT name from restaurant"""
+        sql_query = """SELECT name from public.restaurants"""
         output = apiService.getData(sql_query)
         outArray=[]
         try:
