@@ -80,7 +80,7 @@ apiService = Apiservice ()
 
 
 if __name__ == '__main__':
-    http_server = WSGIServer(('0.0.0.0', 8443), application)
+    http_server = WSGIServer(('0.0.0.0', 5000), application)
     http_server.start()
     try:
        logger.info("LDAP Service is up and running")
